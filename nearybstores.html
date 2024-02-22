@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Nearby Store</title>
+    <link rel="stylesheet" href="nearybstores.css" />
+  </head>
+  <body>
+    <div id="toolbar">
+      <div id="left">
+        <a href="dashboard.html"><span>&#127968;</span></a>
+      </div>
+      <div id="center">
+        <form action="#" method="get">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search..."
+          />
+          <button type="submit"><i class="material-icons"></i></button>
+        </form>
+      </div>
+      <div id="right">
+        <a href="#"><img src="profile-icon.png" alt="Profile" /></a>
+      </div>
+    </div>
+
+    <div id="toolbar2">
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="nearybstores.html">Nearby Stores</a></li>
+        <li><a href="#">Recycle Your eWaste</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Find Nearby E-Waste Recycling Store</h2>
+      <form id="locationForm">
+        <label for="pincode">Enter Your Area Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required />
+        <button type="submit">Find Stores</button>
+      </form>
+      <div id="map"></div>
+    </div>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqOd619b0eeHHrl2d9SLD0udYA8HFuStg&loading=async&callback=initMap"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

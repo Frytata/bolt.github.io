@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <style>
+    /* Style for the body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("./reources/nature.jpg");
+      /* Replace 'background-image.jpg' with your image file */
+      background-size: 110%;
+      background-position: center;
+    }
+
+    /* Style for the login container */
+    .card {
+      background-color: rgba(255, 255, 255, 0.8);
+      /* Semi-transparent white background */
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: auto;
+      margin-top: 10%;
+      max-width: 400px;
+    }
+
+    /* Style for the login form */
+    form {
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+    /* Style for the form inputs */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 5px 0;
+      /* Adjust the padding to your preference */
+      border: none;
+      border-bottom: 1px solid #ccc;
+      /* Underline style */
+      background-color: transparent;
+      /* Transparent background */
+    }
+
+    /* Style for the login button */
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    /* Style for the 'No Account?' link */
+    .lead {
+      text-align: center;
+    }
+
+    .lead a {
+      color: #007bff;
+    }
+
+    h1.text-center {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div class="row mt-5">
+      <div class="col-md-6 m-auto">
+        <div class="card card-body">
+          <h1 class="text-center mb-3">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </h1>
+          <form action="/users/login" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Login
+            </button>
+          </form>
+          <p class="lead mt-4">
+            No Account? <a href="register.html">Register</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#map {
+  height: 400px;
+  margin-top: 20px;
+}
+
+/* Styles for the first toolbar */
+#toolbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items at the ends */
+  align-items: center; /* Center items vertically */
+}
+
+#toolbar #left img,
+#toolbar #right img {
+  height: 0px; /* Adjust the height of the icons as needed */
+}
+
+#toolbar #center form {
+  display: flex;
+  align-items: center;
+}
+
+#toolbar #center input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#toolbar #center button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Styles for the second toolbar */
+#toolbar2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+#toolbar2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+#toolbar2 ul li {
+  margin-right: 20px;
+}
+
+#toolbar2 ul li:last-child {
+  margin-right: 0;
+}
+
+#toolbar2 ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#toolbar2 ul li a:hover {
+  background-color: #555;
+}
